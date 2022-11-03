@@ -40,7 +40,6 @@ public class SecteurActiviteTest {
     public void testretrieveSA(){
 
         Mockito.when(activiteRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(activite));
-        
         Assertions.assertNotNull(activiteServiceImpl.retrieveSecteurActivite(2L));
     }
     
