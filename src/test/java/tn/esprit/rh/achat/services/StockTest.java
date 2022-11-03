@@ -30,7 +30,7 @@ public class StockTest {
 	@Test
 	 void testretrieveStock(Stock s) {
 		Mockito.when(stockRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(stock));
-		Assertions.assertNotNull(serviceImpl.retrieveStock(1L));
+		Assertions.assertNull(serviceImpl.retrieveStock(1L));
 		
 	}
  
