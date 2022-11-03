@@ -1,5 +1,7 @@
 package tn.esprit.rh.achat.services;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.junit.jupiter.api.Assertions;
@@ -26,11 +28,16 @@ public class StockTest {
 	StockServiceImpl serviceImpl;
 	
 	Stock stock =  new Stock(1L,"libel", 22, 12,null);
-	
+    List<Stock> listproduit = new ArrayList<Stock>() {
+        {
+            add(new Stock(2L,"libel", 22, 12,null));
+            add(new Stock(3L,"libel", 22, 12,null));
+        }
+    };
 	@Test
 	 void testretrieveStock(Stock s) {
 		Mockito.when(stockRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(stock));
-		Assertions.assertNull(serviceImpl.retrieveStock(1L));
+		Assertions.assertNull(serviceImpl.retrieveStock(2L));
 		
 	}
  
