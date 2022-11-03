@@ -11,7 +11,6 @@ import tn.esprit.rh.achat.entities.SecteurActivite;
 
 
 
-@RunWith(SpringRunner.class)
 @SpringBootTest
 public class SecteurActiviteJTest {
 	@Autowired
