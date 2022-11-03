@@ -20,7 +20,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import tn.esprit.rh.achat.entities.CategorieFournisseur;
 import tn.esprit.rh.achat.entities.Fournisseur;
 import tn.esprit.rh.achat.repositories.FournisseurRepository;
-import tn.esprit.rh.achat.services.FournisseurServiceImpl;
 
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
@@ -32,17 +31,21 @@ class FournisseurTestImpl {
     @InjectMocks
     FournisseurServiceImpl fournisseurServiceImpl;
 
-    Fournisseur fournisseur = new Fournisseur(1L, "code1", "libelle1", CategorieFournisseur.CONVENTIONNE, null, null, null);
+    Fournisseur fournisseur = new Fournisseur(1L, "code1", "libelle1", null, null, null, null);
 
     List<Fournisseur> listFournisseurs = new ArrayList<Fournisseur>() {
-        {
-            add(new Fournisseur(2L, "code2", "libelle2", CategorieFournisseur.CONVENTIONNE, null, null, null));
-            add(new Fournisseur(3L, "code3", "libelle3", CategorieFournisseur.ORDINAIRE, null, null, null));
+      
+
+		
+
+		{
+            add(new Fournisseur(2L, "code2", "libelle2", null, null, null, null));
+            add(new Fournisseur(3L, "code3", "libelle3", null, null, null, null));
         }
     };
 
     @Test
-    public void testretrieveFournisseur(){
+     void testretrieveFournisseur(){
 
         Mockito.when(fournisseurRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(fournisseur));
         
@@ -50,7 +53,7 @@ class FournisseurTestImpl {
     }
 
     @Test
-    public void testaddFournisseur(){
+     void testaddFournisseur(){
 
         Mockito.when(fournisseurRepository.save(fournisseur)).thenReturn(fournisseur);
 
@@ -58,7 +61,7 @@ class FournisseurTestImpl {
     }
 
     @Test
-    public void testdeleteFournisseur(){
+     void testdeleteFournisseur(){
 
         fournisseurServiceImpl.deleteFournisseur(3L);
 
