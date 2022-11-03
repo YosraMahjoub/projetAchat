@@ -29,6 +29,8 @@ public class FactureServiceImpl implements IFactureService {
     @Autowired
     ReglementServiceImpl reglementService;
 	
+    
+    //
 	@Override
 	public List<Facture> retrieveAllFactures() {
 		List<Facture> factures = (List<Facture>) factureRepository.findAll();
