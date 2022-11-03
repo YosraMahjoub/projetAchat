@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import tn.esprit.rh.achat.entities.SecteurActivite;
 
-
+@SpringBootTest
 public class SecteurActiviteJTest {
 	@Autowired
 	ISecteurActiviteService activiteService;
