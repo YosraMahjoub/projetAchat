@@ -29,7 +29,7 @@ public class ProduitTest {
 	ProduitServiceImpl serviceImpl;
 	Produit prod = new Produit(1L, "code1", "libelle1", 120L,null, null , null , null , null);
 
-    List<Produit> listFournisseurs = new ArrayList<Produit>() {
+    List<Produit> listproduit = new ArrayList<Produit>() {
         {
             add(new Produit(2L, "code2", "libelle2", 200L, null, null , null , null , null ));
             add(new Produit(3L, "code3", "libelle3", 300L, null, null , null , null , null ));
