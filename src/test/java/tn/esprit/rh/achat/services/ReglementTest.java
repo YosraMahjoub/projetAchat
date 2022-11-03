@@ -32,5 +32,15 @@ public class ReglementTest {
 		return reglement1;
 		
 	}
- 
+
+    @Test
+    public void testaddReglement(){
+
+        Mockito.when(reglementRepository.save(reglement)).thenReturn(reglement);
+
+        Assertions.assertNotNull(serviceImpl.addReglement(reglement));
+    }
+
+   
+    
 }
