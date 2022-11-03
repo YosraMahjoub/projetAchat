@@ -19,7 +19,7 @@ public class SecteurActiviteJTest {
 	
 	@Test
 	public void testAddsecta() {
-		SecteurActivite activite = new SecteurActivite(1L, "code1", "libelle1", null);
+		SecteurActivite activite = new SecteurActivite(5L, "code1", "libelle1", null);
 		SecteurActivite sasaved= activiteService.addSecteurActivite(activite);
 		Assertions.assertNotNull(sasaved);
 	} 
