@@ -14,11 +14,13 @@ import tn.esprit.rh.achat.entities.Operateur;
 import tn.esprit.rh.achat.entities.SecteurActivite;
 
 @SpringBootTest
+@TestMethodOrder(OrderAnnotation.class)
 public class OperateurJunitTest {
 	@Autowired
 	OperateurServiceImpl Operateurservice;
 	
 	@Test
+	@Order(1)
 	public void testAddsecta() {
 		Operateur op = new Operateur( 1L,"op" , "lastop" , "f465465df", null );
 		Operateur sasaved= Operateurservice.addOperateur(op);
