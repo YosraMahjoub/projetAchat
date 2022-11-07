@@ -1,6 +1,9 @@
 package tn.esprit.rh.achat.services;
 
 import java.util.ArrayList;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.times;
 import java.util.List;
 import java.util.Optional;
 
@@ -42,5 +45,22 @@ public class ProduitTest {
         
         Assertions.assertNotNull(serviceImpl.retrieveProduit(2L));
     }
+    @Test
+    void testaddProduit(){
+
+       Mockito.when(profRepository.save(prod)).thenReturn(prod);
+
+       Assertions.assertNotNull(serviceImpl.addProduit(prod));
+   }
+
+   @Test
+    void testdeleteProduit(){
+
+       serviceImpl.deleteProduit(3L);
+
+       Mockito.verify(profRepository, times(1)).deleteById(3L);
+
+       assertEquals(null, serviceImpl.retrieveProduit(3L));
+   }
 
 }
