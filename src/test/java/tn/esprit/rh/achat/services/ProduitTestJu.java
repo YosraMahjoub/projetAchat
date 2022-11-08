@@ -26,8 +26,7 @@ public class ProduitTestJu {
 	
 	@Test
 	public void testAddProduit(){
-		List<Produit> produits = produitService.retrieveAllProduits();
-		int expected = produits.size();
+		
 		Produit p = new Produit();
 		p.setIdProduit(1L);
 		p.setCodeProduit("AAA");
