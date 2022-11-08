@@ -16,6 +16,7 @@ import org.springframework.boot.test.context.*;
 @SpringBootTest(classes =  SecteurActiviteJTest.class)
 @RunWith(SpringJUnit4ClassRunner.class)
 public class SecteurActiviteJTest {
+	
 	@Autowired
 	ISecteurActiviteService activiteService;
 	
