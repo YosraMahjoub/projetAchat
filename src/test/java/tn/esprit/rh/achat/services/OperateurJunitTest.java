@@ -13,8 +13,10 @@ import tn.esprit.rh.achat.entities.Operateur;
 @SpringBootTest(classes=OperateurJunitTest.class)
 @RunWith(SpringRunner.class)
 
-@ContextConfiguration (locations = "classpath*:/spring/applicationContext*.xml")
-
+@ContextConfiguration(locations = {
+"classpath*:spring/applicationContext.xml",
+"classpath*:spring/applicationContext-jpa.xml",
+"classpath*:spring/applicationContext-security.xml" })
 public class OperateurJunitTest {
 	
 	@Autowired
