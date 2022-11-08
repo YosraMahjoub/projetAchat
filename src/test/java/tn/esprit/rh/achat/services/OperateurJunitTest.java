@@ -10,13 +10,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 import tn.esprit.rh.achat.entities.Operateur;
 
 @SpringBootTest
-@TestMethodOrder(OrderAnnotation.class)
 public class OperateurJunitTest {
 	@Autowired
 	OperateurServiceImpl Operateurservice;
 	
 	@Test
-	@Order(1)
+	
 	public void testAddOp() {
 		Operateur op = new Operateur( 1L,"op" , "lastop" , "f465465df", null );
 		Operateur sasaved= Operateurservice.addOperateur(op);
