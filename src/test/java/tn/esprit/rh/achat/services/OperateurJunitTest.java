@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import tn.esprit.rh.achat.entities.Operateur;
 
-@SpringBootTest
+@SpringBootTest(classes=OperateurJunitTest.class)
 
 @RunWith(SpringRunner.class)
 
