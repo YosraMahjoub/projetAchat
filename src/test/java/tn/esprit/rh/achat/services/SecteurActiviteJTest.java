@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest(classes =  SecteurActiviteJTest.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
  class SecteurActiviteJTest {
-	@MockBean
+	@Autowired
 	ISecteurActiviteService activiteService;
 	
 	
