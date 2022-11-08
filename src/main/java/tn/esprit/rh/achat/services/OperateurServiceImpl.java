@@ -1,6 +1,7 @@
 package tn.esprit.rh.achat.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import tn.esprit.rh.achat.entities.Operateur;
 import tn.esprit.rh.achat.repositories.OperateurRepository;
@@ -8,6 +9,8 @@ import tn.esprit.rh.achat.repositories.OperateurRepository;
 import java.util.List;
 
 @Service("operateurService")
+@Qualifier("operateurRepository")
+
 
 public class OperateurServiceImpl implements IOperateurService {
 
