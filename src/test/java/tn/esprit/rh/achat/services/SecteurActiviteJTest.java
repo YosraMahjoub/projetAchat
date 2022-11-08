@@ -15,7 +15,7 @@ import org.springframework.boot.test.context.*;
 @SpringBootTest(classes =  SecteurActiviteJTest.class)
 public class SecteurActiviteJTest {
 	@Autowired
-	SecteurActiviteServiceImpl activiteService;
+	ISecteurActiviteService activiteService;
 	
 	@Test
 	public void testAddsecta() {
