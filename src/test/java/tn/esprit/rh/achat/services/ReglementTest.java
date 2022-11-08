@@ -29,13 +29,17 @@ public class ReglementTest {
 	
 	Reglement reglement =  new Reglement( 1L,(float) 1, (float) 1,true, null, null);
 	
+    List<Reglement> reglements = new ArrayList<Reglement>() {
+        {
+            add(new Reglement( 2L,(float) 1, (float) 1,true, null, null));
+            add(new Reglement( 1L,(float) 1, (float) 1,true, null, null));
+        }
+    };
+	
 	@Test
-	public Reglement testretrieveStock(Reglement s) {
+	public void testretrieveStock(Reglement s) {
 		Mockito.when(reglementRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(reglement));
-		Reglement reglement1 = serviceImpl.retrieveReglement(reglement.getIdReglement());
-		Assertions.assertNotNull(reglement1); 
-		return reglement1;
-		
+		Assertions.assertNotNull(serviceImpl.retrieveReglement(2L));
 	}
 
     @Test
