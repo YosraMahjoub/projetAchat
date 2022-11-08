@@ -37,7 +37,7 @@ public class ReglementTest {
     };
 	
 	@Test
-	public void testretrieveStock(Reglement s) {
+	public void testretrieveStock() {
 		Mockito.when(reglementRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(reglement));
 		Assertions.assertNotNull(serviceImpl.retrieveReglement(2L));
 	}
