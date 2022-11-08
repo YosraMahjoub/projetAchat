@@ -4,9 +4,7 @@ import tn.esprit.rh.achat.entities.Operateur;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
 
-@Service
 public interface IOperateurService {
 
 	List<Operateur> retrieveAllOperateurs();
