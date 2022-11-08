@@ -16,15 +16,20 @@ import org.springframework.boot.test.context.*;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes =  SecteurActiviteJTest.class)
+@SpringBootTest(properties = "spring.main.lazy-initialization=true", classes =  SecteurActiviteJTest.class)
 @ExtendWith(SpringExtension.class)	
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
  class SecteurActiviteJTest {
 	
+	@Autowired
+    ISecteurActiviteService sa;
+	
 	@Test
 	@Order(1)
 	public void testretrsecta() {
-		assertTrue(true);
+		SecteurActivite sec = new SecteurActivite(1L, "code1", "libelle1", null);
+		SecteurActivite secteurActivite= sa.addSecteurActivite(sec);
+		Assertions.assertNotNull(secteurActivite);
 	    
 	} 
 
