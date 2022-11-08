@@ -6,11 +6,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@Configuration
-@ComponentScan(basePackages = {"tn.esprit.rh.achat.*"})
-@EnableJpaRepositories(basePackages =  {"tn.esprit.rh.achat.*"})
-@EntityScan( {"tn.esprit.rh.achat.*"})
-@EnableAutoConfiguration
+//@Configuration
+//@EnableJpaRepositories(basePackages =  {"tn.esprit.rh.achat.*"})
+//@EntityScan( {"tn.esprit.rh.achat.*"})
+//@EnableAutoConfiguration
 public class Config {
 
 }
