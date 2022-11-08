@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Import;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -16,6 +17,7 @@ import tn.esprit.rh.achat.entities.Operateur;
 @SpringBootTest(classes=OperateurJunitTest.class)
 @RunWith(SpringRunner.class)
 
+@Import(tn.esprit.rh.achat.services.OperateurServiceImpl.class)
 
 public class OperateurJunitTest {
 	
