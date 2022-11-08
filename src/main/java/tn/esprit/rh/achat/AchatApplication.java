@@ -7,7 +7,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableScheduling
 @SpringBootApplication
-@ComponentScan({"tn.esprit.rh.achat.services"})
 public class AchatApplication {
 
     public static void main(String[] args) {
