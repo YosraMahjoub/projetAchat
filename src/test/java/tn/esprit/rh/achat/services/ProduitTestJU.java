@@ -24,13 +24,7 @@ public class ProduitTestJU {
 	@Test
 	public void testAddProduit(){
 		
-		Produit p = new Produit();
-		p.setIdProduit(1L);
-		p.setCodeProduit("AAA");
-		p.setLibelleProduit("C");
-		p.setPrix(120);
-		p.setDateCreation(new Date());
-		p.setDateDerniereModification(new Date());
+		Produit p = new Produit(2L, "code2", "libelle2", 200L, null, null , null , null , null );
 		Produit savedProduit= produitService.addProduit(p);
 		Assertions.assertNotNull(savedProduit);
 		
