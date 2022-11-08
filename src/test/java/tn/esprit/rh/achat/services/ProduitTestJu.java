@@ -1,20 +1,20 @@
 package tn.esprit.rh.achat.services;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.junit.jupiter.api.*;
 
-import tn.esprit.rh.achat.entities.Produit;
-import tn.esprit.rh.achat.services.IProduitService;
+import tn.esprit.rh.achat.entities.*;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.*;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Date;
 import java.util.List;
 
-@SpringBootTest(classes =ProduitTestJu.class)
+@SpringBootTest(classes = ProduitTestJu.class)
 @RunWith(SpringRunner.class)
 public class ProduitTestJu {
 
