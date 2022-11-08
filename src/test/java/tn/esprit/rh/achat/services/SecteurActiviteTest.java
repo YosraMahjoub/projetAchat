@@ -20,7 +20,7 @@ import tn.esprit.rh.achat.repositories.*;
 
 import org.springframework.boot.test.context.*;
 
-@SpringBootTest(classes =  SecteurActiviteJTest.class)
+@SpringBootTest(classes =  SecteurActiviteTest.class)
 @ExtendWith(MockitoExtension.class)
 
 public class SecteurActiviteTest {
