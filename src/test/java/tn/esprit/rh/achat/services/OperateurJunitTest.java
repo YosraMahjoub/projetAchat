@@ -20,7 +20,7 @@ import tn.esprit.rh.achat.entities.Operateur;
 public class OperateurJunitTest {
 	
 	@Autowired
-	OperateurServiceImpl Operateurservice;
+	private OperateurServiceImpl Operateurservice;
 	
 	@Test
 	
