@@ -14,8 +14,8 @@ import tn.esprit.rh.achat.services.IProduitService;
 import java.util.Date;
 import java.util.List;
 
+@SpringBootTest(classes =ProduitTestJu.class)
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes =  ProduitTestJu.class)
 public class ProduitTestJu {
 
 	@Autowired
