@@ -8,7 +8,7 @@ import tn.esprit.rh.achat.repositories.OperateurRepository;
 
 import java.util.List;
 
-@Service
+@Service("Operateurservice")
 
 public class OperateurServiceImpl implements IOperateurService {
 
