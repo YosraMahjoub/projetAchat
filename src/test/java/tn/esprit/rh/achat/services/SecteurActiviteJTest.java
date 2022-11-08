@@ -16,9 +16,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.*;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
-@RunWith(SpringRunner.class)
+
+
 @SpringBootTest( classes =  SecteurActiviteJTest.class)
-@ExtendWith(SpringExtension.class)	
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
  class SecteurActiviteJTest {
 	
