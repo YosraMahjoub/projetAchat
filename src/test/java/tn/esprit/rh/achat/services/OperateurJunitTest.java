@@ -18,6 +18,7 @@ import tn.esprit.rh.achat.entities.Operateur;
 @RunWith(SpringRunner.class)
 
 @Import(tn.esprit.rh.achat.services.OperateurServiceImpl.class)
+@ContextConfiguration(classes = {tn.esprit.rh.achat.repositories.OperateurRepository.class})
 
 public class OperateurJunitTest {
 	
