@@ -1,18 +1,17 @@
 package tn.esprit.rh.achat.services;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.runner.RunWith;
-import org.junit.jupiter.api.*;
-
-import tn.esprit.rh.achat.entities.*;
+import org.junit.jupiter.api.Assertions;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.*;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.Date;
-import java.util.List;
+import tn.esprit.rh.achat.AchatApplication;
+import tn.esprit.rh.achat.entities.*;
 
 @SpringBootTest(classes = ProduitTestJU.class)
 @RunWith(SpringRunner.class)
