@@ -1,17 +1,13 @@
 package tn.esprit.rh.achat.services;
-import java.util.List;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.TestMethodOrder;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import tn.esprit.rh.achat.entities.Operateur;
-import tn.esprit.rh.achat.entities.SecteurActivite;
 
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
@@ -21,7 +17,7 @@ public class OperateurJunitTest {
 	
 	@Test
 	@Order(1)
-	public void testAddsecta() {
+	public void testAddOp() {
 		Operateur op = new Operateur( 1L,"op" , "lastop" , "f465465df", null );
 		Operateur sasaved= Operateurservice.addOperateur(op);
 		Assertions.assertNotNull(sasaved);
