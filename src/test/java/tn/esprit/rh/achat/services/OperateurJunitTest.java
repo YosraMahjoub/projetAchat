@@ -14,7 +14,6 @@ import tn.esprit.rh.achat.entities.Operateur;
 
 @SpringBootTest(classes=OperateurJunitTest.class)
 @RunWith(SpringRunner.class)
-@ComponentScan(basePackages = {"tn.esprit.rh.achat.services"})
 @Qualifier("operateurService")
 
 
