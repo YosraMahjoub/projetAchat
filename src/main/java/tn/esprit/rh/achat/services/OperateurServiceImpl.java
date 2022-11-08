@@ -10,8 +10,8 @@ import tn.esprit.rh.achat.repositories.OperateurRepository;
 
 import java.util.List;
 
-@Service("Operateurservice")
-@Transactional
+@Service
+
 public class OperateurServiceImpl implements IOperateurService {
 
 	@Autowired
