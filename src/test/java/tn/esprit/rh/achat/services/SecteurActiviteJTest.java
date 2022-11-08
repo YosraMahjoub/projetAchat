@@ -17,8 +17,9 @@ public class SecteurActiviteJTest {
 	@Autowired
 	ISecteurActiviteService activiteService;
 	
+	
 	@Test
-	  @Order(1)
+	@Order(1)
 	public void testAddsecta() {
 		SecteurActivite activite = new SecteurActivite(5L, "code1", "libelle1", null);
 		SecteurActivite sasaved= activiteService.addSecteurActivite(activite);
