@@ -10,7 +10,7 @@ import tn.esprit.rh.achat.services.IProduitService;
 
 import java.util.Date;
 import java.util.List;
-@SpringBootTest
+@SpringBootTest(classes =  ProduitTestJu.class)
 public class ProduitTestJu {
 
 	@Autowired
@@ -21,7 +21,7 @@ public class ProduitTestJu {
 		List<Produit> produits = produitService.retrieveAllProduits();
 		int expected = produits.size();
 		Produit p = new Produit();
-		p.setIdProduit((long)1);
+		p.setIdProduit(1L);
 		p.setCodeProduit("AAA");
 		p.setLibelleProduit("C");
 		p.setPrix(120);
