@@ -13,8 +13,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes =  SecteurActiviteJTest.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class SecteurActiviteJTest {
-	@Autowired
+ class SecteurActiviteJTest {
+	@MockBean
 	ISecteurActiviteService activiteService;
 	
 	
