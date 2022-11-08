@@ -6,7 +6,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableScheduling
-@SpringBootApplication
+@SpringBootApplication(exclude = {HibernateJpaAutoConfiguration.class})
+
 @ComponentScan(basePackages = {"tn.esprit.rh.achat.services"})
 
 public class AchatApplication {
