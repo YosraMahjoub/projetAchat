@@ -1,7 +1,4 @@
 package tn.esprit.rh.achat.services;
-
-
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -12,11 +9,9 @@ import tn.esprit.rh.achat.entities.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.*;
 
-
+@RunWith(SpringRunner.class)
 @SpringBootTest(classes =  SecteurActiviteJTest.class)
-@RunWith(SpringJUnit4ClassRunner.class)
 public class SecteurActiviteJTest {
-	
 	@Autowired
 	ISecteurActiviteService activiteService;
 	
