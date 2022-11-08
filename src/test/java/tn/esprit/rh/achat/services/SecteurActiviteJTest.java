@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.*;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes =  SecteurActiviteJTest.class)
+@SpringBootTest()
 public class SecteurActiviteJTest {
 	@Autowired
 	ISecteurActiviteService activiteService;
