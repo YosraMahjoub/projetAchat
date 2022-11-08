@@ -1,5 +1,11 @@
 package tn.esprit.rh.achat.services;
 
-public class AchatApplicationTest {
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
+@SpringBootTest
+ class AchatApplicationTest {
+	@Test
+	void contextLoads() {
+	}
 }
