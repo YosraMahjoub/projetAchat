@@ -20,9 +20,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 @ExtendWith(SpringExtension.class)	
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
  class SecteurActiviteJTest {
-	@Autowired
-	ISecteurActiviteService activiteService;
-	
 	
 	@Test
 	@Order(1)
