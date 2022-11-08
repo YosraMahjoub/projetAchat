@@ -15,6 +15,7 @@ public class ProduitTestJu {
 
 	@Autowired
 	IProduitService produitService;
+	
 	@Test
 	public void testAddProduit(){
 		List<Produit> produits = produitService.retrieveAllProduits();
