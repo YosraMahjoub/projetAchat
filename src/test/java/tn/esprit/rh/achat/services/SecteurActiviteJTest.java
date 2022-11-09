@@ -16,9 +16,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 
 
-@SpringBootTest(classes =  SecteurActiviteJTest.class)
+@SpringBootTest()
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-
  class SecteurActiviteJTest {
 	
 	@Autowired
