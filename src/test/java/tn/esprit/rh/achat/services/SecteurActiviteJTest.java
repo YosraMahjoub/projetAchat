@@ -5,9 +5,6 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.runner.RunWith;
-
-import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 import tn.esprit.rh.achat.entities.*;
