@@ -16,7 +16,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 
 
-@Import({ISecteurActiviteService.class})
+@Import({SecteurActiviteServiceImpl.class})
 @SpringBootTest( classes =  SecteurActiviteJTest.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 
