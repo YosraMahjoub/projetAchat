@@ -16,7 +16,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 
 
-@SpringBootTest
+@SpringBootTest(classes =  ProduitTestJU.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class ProduitTestJU {
 
