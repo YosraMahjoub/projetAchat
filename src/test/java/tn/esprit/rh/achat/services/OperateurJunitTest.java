@@ -15,7 +15,7 @@ import tn.esprit.rh.achat.AchatApplication;
 import tn.esprit.rh.achat.entities.Operateur;
 import tn.esprit.rh.achat.repositories.OperateurRepository;
 
-@SpringBootTest(classes = {OperateurServiceImpl.class, OperateurRepository.class})
+@SpringBootTest
 @RunWith(SpringRunner.class)
 
 //@Import(tn.esprit.rh.achat.services.OperateurServiceImpl.class)
