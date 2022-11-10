@@ -7,7 +7,7 @@ import tn.esprit.rh.achat.entities.Fournisseur;
 import tn.esprit.rh.achat.services.IFournisseurService;
 
 import java.util.List;
-
+//http://192.168.1.98:8089/SpringMVC/fournisseur/add-fournisseur
 
 @RestController
 @Api(tags = "Gestion des fournisseurss")
