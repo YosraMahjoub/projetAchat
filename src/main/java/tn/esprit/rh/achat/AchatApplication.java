@@ -9,8 +9,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @SpringBootApplication
 
-@ComponentScan("tn.esprit.rh.achat.*")
-@EnableJpaRepositories ("tn.esprit.rh.achat.repositories")
 
 public class AchatApplication {
 
