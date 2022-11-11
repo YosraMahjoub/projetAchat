@@ -39,4 +39,4 @@ services:
 volumes:
   tp-achat-mysql-vol:
 networks:
-  test_default
+  test_default:
