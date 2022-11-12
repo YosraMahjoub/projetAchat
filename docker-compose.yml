@@ -28,12 +28,11 @@ services:
       - MYSQL_USER=mariem
       - MYSQL_PASSWORD=mariem
     ports:
-      - 3307:3306
+      - 3306:3306
     volumes:
       - tp-achat-mysql-vol:/my/own/datadir       
     networks:
-      common-network:
-        ipv4_address: 192.168.0.55 
+      - test_default   
 
    
 
