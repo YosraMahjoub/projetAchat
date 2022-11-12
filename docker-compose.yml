@@ -21,7 +21,7 @@ services:
 
   tp-achat-mysql:
     container_name: mysql-container4
-    image: "mysql:latest"
+    image: "mysql:5.7"
     environment:
       - MYSQL_ROOT_PASSWORD=mariem
       - MYSQL_DATABASE=achatdb
