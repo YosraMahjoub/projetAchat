@@ -18,7 +18,9 @@ services:
     
     depends_on:
       - tp-achat-mysql
-    command: ["./wait-for-it.sh"]
+    healthcheck:
+      timeout: 20s
+      retries: 10
 
   tp-achat-mysql:
     container_name: mysql-container4
