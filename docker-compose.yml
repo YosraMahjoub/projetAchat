@@ -28,7 +28,7 @@ services:
       - MYSQL_USER=ghada
       - MYSQL_PASSWORD=ghada
     ports:
-      - 3307:3306
+      - 3308:3309
     volumes:
       - tp-achat-mysql-vol:/my/own/datadir       
     networks:
