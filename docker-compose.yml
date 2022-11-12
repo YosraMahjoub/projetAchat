@@ -10,7 +10,7 @@ services:
     ports:
       - "8089:8089"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://tp-achat-mysql:3306/achatdb?useSSL=false
+      - SPRING_DATASOURCE_URL=jdbc:mysql://tp-achat-mysql:3306/achatdb?useSSL=false&allowPublicKeyRetrieval=true
       - MYSQL_HOST=tp-achat-mysql
       - MYSQL_USERNAME=mehdi
       - MYSQL_PASSWORD=mehdi
