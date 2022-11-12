@@ -21,14 +21,14 @@ services:
 
   tp-achat-mysql:
     container_name: achat-mysql_2
-    image: "mysql:5.7"
+    image: "mysql:5.6"
     environment:
       - MYSQL_ROOT_PASSWORD=ghada
       - MYSQL_DATABASE=achatdb
       - MYSQL_USER=ghada
       - MYSQL_PASSWORD=ghada
     ports:
-      - 3308:3309
+      - 3307:3306
     volumes:
       - tp-achat-mysql-vol:/my/own/datadir       
     networks:
