@@ -20,7 +20,7 @@ services:
       - tp-achat-mysql
 
   tp-achat-mysql:
-    container_name: mysql-container2
+    container_name: mysql-container
     image: "mysql:latest"
     environment:
       - MYSQL_ROOT_PASSWORD=mariem
