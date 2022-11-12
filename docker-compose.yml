@@ -1,23 +1,7 @@
 version: '3.1'
 services:
 
-  tp-achat:
-    container_name: achat
-    image: "backend_achat"
-    build: .
-    networks:
-      - test_default   
-    ports:
-      - "8089:8089"
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://tp-achat-mysql:3306/achatdb?useSSL=false
-      - MYSQL_HOST=tp-achat-mysql
-      - MYSQL_USERNAME=mariem
-      - MYSQL_PASSWORD=mariem
-      - MYSQL_DATABASE=achatdb
-    
-    depends_on:
-      - tp-achat-mysql
+  
    
   tp-achat-mysql:
     container_name: mysql-container4
@@ -34,7 +18,23 @@ services:
     networks:
       - test_default   
 
-   
+  tp-achat:
+    container_name: achat
+    image: "backend_achat"
+    build: .
+    networks:
+      - test_default   
+    ports:
+      - "8089:8089"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://tp-achat-mysql:3306/achatdb?useSSL=false
+      - MYSQL_HOST=tp-achat-mysql
+      - MYSQL_USERNAME=mariem
+      - MYSQL_PASSWORD=mariem
+      - MYSQL_DATABASE=achatdb
+    
+    depends_on:
+      - tp-achat-mysql 
 
 volumes:
   tp-achat-mysql-vol:
