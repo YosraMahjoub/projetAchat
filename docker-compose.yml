@@ -23,7 +23,7 @@ services:
     container_name: mysql-container2
     image: "mysql:latest"
     environment:
-      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_ROOT_PASSWORD=mariem
       - MYSQL_DATABASE=achatdb
       - MYSQL_USER=mariem
       - MYSQL_PASSWORD=mariem
