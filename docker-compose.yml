@@ -13,7 +13,7 @@ services:
       - SPRING_DATASOURCE_URL=jdbc:mysql://tp-achat-mysql:3306/achatdb?useSSL=false
       - MYSQL_HOST=tp-achat-mysql
       - MYSQL_USERNAME=ghada
-      - MYSQL_PASSWORD=YES
+      - MYSQL_PASSWORD=ghada
       - MYSQL_DATABASE=achatdb
     
     depends_on:
@@ -26,7 +26,7 @@ services:
       - MYSQL_ROOT_PASSWORD=ghada
       - MYSQL_DATABASE=achatdb
       - MYSQL_USER=ghada
-      - MYSQL_PASSWORD=YES
+      - MYSQL_PASSWORD=ghada
     ports:
       - 3307:3306
     volumes:
