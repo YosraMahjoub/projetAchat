@@ -12,7 +12,6 @@ services:
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://tp-achat-mysql:3306/achatdb?useSSL=false
       - MYSQL_HOST=tp-achat-mysql
-      - MYSQL_USERNAME=root
       - MYSQL_PASSWORD=root
       - MYSQL_DATABASE=achatdb
     
@@ -25,8 +24,6 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=achatdb
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=root
     ports:
       - 3307:3306
     volumes:
