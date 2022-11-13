@@ -1,4 +1,4 @@
-package tn.esprit.rh.achat.services;
+/*package tn.esprit.rh.achat.services;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
@@ -51,9 +51,10 @@ public class ProduitTestJU {
 		produitService.deleteProduit(savedProduit.getIdProduit());
 		}
 	
-	*/
+
 	
 
 	
 	
 }
+*/
