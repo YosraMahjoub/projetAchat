@@ -34,6 +34,8 @@ public class SecteurActiviteTest {
         {
             add(new SecteurActivite(2L, "code2", "libelle2",  null ));
             add(new SecteurActivite(3L, "code3", "libelle3", null ));
+            add(new SecteurActivite(4L, "code4", "libelle4",  null ));
+            add(new SecteurActivite(5L, "code5", "libelle5", null ));
         }
     };
     @Test
