@@ -58,5 +58,4 @@ class FournisseurServiceImplMockTest {
         Assertions.assertNotNull(savedRestObject);
     }
 
-    }
 }
