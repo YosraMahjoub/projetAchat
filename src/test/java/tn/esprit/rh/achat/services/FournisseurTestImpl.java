@@ -57,14 +57,6 @@ class FournisseurServiceImplMockTest {
         Fournisseur savedRestObject = savedObjectArgument.getValue();
         Assertions.assertNotNull(savedRestObject);
     }
-    @Test
-    void testdeleteFournisseur() {
-        Fournisseur fournisseur = new Fournisseur();
-        fournisseur.setLibelle("new test");
-        fournisseur.setIdFournisseur(1L);
-        when(fournisseurRepository.findById(fournisseur.getIdFournisseur())).thenReturn(Optional.of(fournisseur));
-        Fournisseur fournisseur1 = fournisseurServiceImpl.retrieveFournisseur(1L);
-        fournisseurServiceImpl.deleteFournisseur(fournisseur1.getIdFournisseur());
-        verify(fournisseurRepository).deleteById(fournisseur1.getIdFournisseur());
+
     }
 }
